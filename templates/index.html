@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VoiceAI Transcriber</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<h1 class="logo">Voice<span>AI</span></h1>
+
+<p class="subtitle">
+AI Powered Speech Recognition
+</p>
+
+<div class="search-box">
+
+<input type="text" placeholder="Upload or record your audio..." disabled>
+
+<button id="uploadBtn">📁</button>
+<button id="micBtn">🎤</button>
+
+<input type="file" id="fileInput" hidden>
+
+</div>
+
+<div class="actions">
+
+<button id="transcribeBtn">Transcribe Audio</button>
+
+</div>
+
+<audio id="audioPreview" controls></audio>
+
+<div id="loader">
+<div class="spinner"></div>
+Processing Audio...
+</div>
+
+<div class="result-card">
+
+<h3>Transcription</h3>
+
+<p id="output"></p>
+
+</div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
